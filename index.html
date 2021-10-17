@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  <title>Frontend Mentor | Stats preview card component</title>
+ <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  min-height: 90vh;
+  background-color:hsl(233, 47%, 7%) ;
+  display: flex;
+  align-items: center;
+  margin:80px;
+ 
+}
+.container{
+        min-width:700px;
+        margin: 0 auto;
+    
+   
+}
+.warrpier{
+  background-color: hsl(244, 38%, 16%);
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       border-radius: 5px;
+       overflow: hidden;
+   
+
+}
+.img-component img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+}
+.img-component{
+      position:  relative;
+}
+.img-component::after{
+       position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      background-color: hsl(277, 64%, 61%);
+      opacity: .7;
+}
+
+.text-commponet{
+           font-size: 15px;
+           color:  hsl(0, 0%, 100%);
+         margin: 12px;
+         text-align: center;
+         margin-bottom: -200px;
+         
+}
+.text-commponet h1{
+       margin-top:30px;
+}
+.text-commponet p{
+       margin-top: 25px;
+}
+.text-commponet h1 span{
+          color:hsl(277, 64%, 61%) ;
+}
+.stat-box {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px;   
+     
+}
+
+
+
+
+ </style>
+  
+
+
+ 
+</head>
+<body>
+<div class="container">
+  <div class="warrpier">
+    <div class="text-commponet">
+    <h1 class="title"> Get <span>insights</span> that help your business grow.</h1>
+      <p class="subtitle">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+        <div class="stat-box">
+        <div>
+
+          
+        <p class="num"> 10k+ </p>
+          <P> companies</P>
+        </div>
+        <div>
+        <p class="num">314</p>
+          <P>  templates</P>
+          </div>
+          <div>
+        <p class="num">12m+</p>
+
+          <P>  queries</P>
+          </div>
+        </div>
+        
+        </div> 
+        <div class="img-component">
+          <img src="images/image-header-mobile.jpg">
+        </div>
+      
+  </div>
+  
+</div>
+ 
+
+
+ 
+
+ 
+
+</body>
+</html>
